@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bywsxgg0urg8n"]
+
+[ext_resource type="Script" uid="uid://d1lb4f3bqvclg" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=1716004103]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = -17.0
+offset_right = 21.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=996128800]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=250186013]
+layout_mode = 2
+text = "Start"
+
+[node name="SettingButton" type="Button" parent="VBoxContainer" unique_id=1898148771]
+layout_mode = 2
+text = "Setting"
+
+[node name="SettingPanel" type="Panel" parent="VBoxContainer/SettingButton" unique_id=1812862841]
+layout_mode = 0
+offset_left = -364.5
+offset_top = -182.5
+offset_right = 441.5
+offset_bottom = 211.5
+
+[node name="Label" type="Label" parent="VBoxContainer/SettingButton/SettingPanel" unique_id=1658628911]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 17.0
+offset_right = 76.0
+offset_bottom = 40.0
+text = "Setting"
+
+[node name="BackButton" type="Button" parent="VBoxContainer/SettingButton/SettingPanel" unique_id=1713083559]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 59.0
+offset_right = 66.0
+offset_bottom = 90.0
+text = "Back"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1545990059]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingButton" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingButton/SettingPanel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
