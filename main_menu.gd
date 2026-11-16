@@ -12,7 +12,7 @@ func _ready() -> void:
 # Dihubungkan dari sinyal pressed() milik PlayButton
 func _on_play_button_pressed() -> void:
 	# Sesuaikan "res://map.tscn" dengan nama file scene 3D kamu
-	get_tree().change_scene_to_file("res://map.tscn")
+	get_tree().change_scene_to_file("res://scene/map.tscn")
 
 # Dihubungkan dari sinyal pressed() milik SettingButton
 func _on_setting_button_pressed() -> void:

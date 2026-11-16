@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 # Pengaturan kecepatan gerak & lompat
-const SPEED = 4.0
+const SPEED = 2.5
 const JUMP_VELOCITY = 2.5
 
 # Pengaturan sensitivitas mouse
