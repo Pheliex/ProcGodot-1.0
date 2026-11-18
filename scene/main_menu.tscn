@@ -46,18 +46,18 @@ offset_bottom = 211.5
 
 [node name="Label" type="Label" parent="VBoxContainer/SettingButton/SettingPanel" unique_id=1658628911]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 17.0
-offset_right = 76.0
-offset_bottom = 40.0
+offset_left = 721.0
+offset_top = 30.0
+offset_right = 776.0
+offset_bottom = 53.0
 text = "Setting"
 
 [node name="BackButton" type="Button" parent="VBoxContainer/SettingButton/SettingPanel" unique_id=1713083559]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 59.0
-offset_right = 66.0
-offset_bottom = 90.0
+offset_left = 25.0
+offset_top = 24.0
+offset_right = 70.0
+offset_bottom = 55.0
 text = "Back"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1545990059]
